@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website-ঔৣDheerajঔৣ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ebc37ce81.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/plogo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#About">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div>
+                <p>Full Stack Developer</p>
+                <h1>Hi,I'm <span> Dheeraj</span> <br> Patel from India</h1>
+                </div>
+                <div>
+                    <img class="header-img" src="images/net.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------about------------>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Software Developer||Java Full Stack Developer with expertise in Java, Spring Boot, Hibernate, REST API development, and MySQL. I have experience in building scalable web applications, including a Full Stack CRUD Application for managing student data and a Hotel Booking System with features like JWT authentication, OAuth login, and AWS S3 integration.
+                        I completed an internship at PSA Academy, specializing in back-end development with Spring Boot and full-stack methodologies using Angular and TypeScript. Skilled in tools like IntelliJ IDEA, Postman, Swagger, and GitHub, I focus on creating efficient, user-friendly solutions while continuously learning and improving.
+                       
+                       
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, OOPs Concepts,Core Java 8,J2EE, C Programming,<br> Data Structure and Algorithms, And Familier with Python.      
+                               
+                    </li>
+                            <li><span>Frameworks & Technologies</span><br>Spring,Spring Boot,Spring MVC, Hibernate,J2EE, Microservices Architecture
+                                
+                                </li>
+                            <li><span>Web Development</span><br>HTML,CSS,JS,Servlets,JSP,JSTL,JDBC,REST API Design & Development,Spring Security, OAuth
+                               
+                                
+                               </li>
+                            <li><span>Database & Cloud Technologies</span><br>MySQL, AWS (Testing deployment, S3)
+                               </li>
+                                <li><span>Tools & Services</span><br>Git & GitHub,Postman,Swagger,  IntelliJ IDEA / STS / Eclipse,Maven, JUnit, Services (General knowledge of web services)
+                                </li>         
+                                   
+                                    
+                                    
+                                  
+                               
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023-current</span><br> INTERN-JAVA FULL STACK DEVELOPER, PSA ACADEMY,
+                                BANGALORE, NOVEMBER-2023-MAY-2024
+                                </li>
+                            <li><span>UPSKILLZ'S INTERN | Aug 2022-Oct 2022</span><br>WORKED AS A WEB DEVELOPMENT PROGRAM IN UPSKILLZ'S<br>
+                                Our training program on web development is carefully curated to
+                                introduce you to HTML5 and CSS3, to help you create some of the
+                                most interactive web designs and Also learning how to develop high quality sites for all kinds of devices and accessible on all screens. </li>
+                            <li><span>September 01,2020 To November 20,2020</span><br>Internship on Web Technologies Under Java club IMSEC,GHAZIABAD</li>
+                            <li><span>ACHIEVEMENTS &
+                                AWARDS</span><br>PSA Academy 6-month| Java
+                                Developer<br>Python Programming- A Practical
+                                Approach E & ICT Academy, IIT Kanpur<br>
+                                WebDevelopment (from IMSEC)<br>
+                                Java(Coursera)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019-2023</span><br>IMS ENGINEERING COLLEGE,GHAZIABAD<br>
+                                B.Tech / Computer Science & Engineering<br>
+                                75.5 %</li>
+                            <li><span>2018</span><br>Intermediate (XII) Sri Siddh Nath I .C.Deoria<br>63.2%</li>
+                            <li><span>2016</span><br>Secondary (X) AYT Sr.Sec.School Ghataila Chetie,Deoria,CBSE Board<br>
+                                8.6 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Services--------------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Design and develop user interfaces using HTML, CSS, JavaScript, and modern frameworks like Angular, React, or Vue.js.
+                        Responsive web design for mobile and desktop compatibility.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Backend Development</h2>
+                    <p> Backend Development:RESTful API development using Spring Boot, Spring MVC, and Java. Implementing authentication and authorization with JWT, OAuth, and Spring Security. Integration with databases (MySQL, PostgreSQL, MongoDB).<br>
+                        Cloud Integration: Deployment of applications using cloud services like AWS, Google Cloud, or Azure. Integration with cloud-based services (e.g., AWS S3 for file storage, SES for email, SNS for SMS).<br>
+                        <br>Database Management: Designing database schemas, implementing ORM frameworks (JPA/Hibernate), writing complex queries, and optimizing database performance.<br>
+ <br>Version Control and CI/CD: Proficient in Git, GitHub/GitLab for version control. Experience with Jenkins, CircleCI, or other tools for continuous integration and deployment.<br>
+Unit Testing & Debugging: Writing unit tests using JUnit, Mockito, and other testing frameworks. Debugging and ensuring code quality.<br>
+Performance Optimization: Performance tuning for both frontend and backend applications. Profiling and optimizing resource usage.<br>
+Agile Methodology: Experience in Agile development, working with Scrum/Kanban methodologies.<br>
+Third-Party API Integration: Integration with third-party APIs (e.g., payment gateways, social media APIs, email/SMS services).<br>
+Security: Implementing best practices for application security (e.g., CSRF, CORS, SQL Injection prevention, XSS prevention).
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>API Documentation and Testing</h2>
+                    <p>Experience with Postman for API testing and Swagger for API documentation.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!---------------------Portfolio---------------------------------------------------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h2>FULL STACK CRUD PROJECT</h2>
+                            <p>Design and Developed a full stack CRUD(Create, Read, Update,
+                                Delete) application to efficiently manage and manipulate the
+                                student data .
+                               </p>
+                            <a href="https://github.com/dheeraj9307/FullStackCrudProject.git"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h2>Hotel Booking System</h2>
+                            <p>Developed Signin/Signup with JWT, Spring Security, Gmail OAuth, OTP, property management with AWS S3, SMS/Email/PDF booking confirmations, and REST APIs with pagination, sorting, and validation using Spring Boot and Java 8.</p>
+                            <a href="https://github.com/dheeraj9307"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h2>Job Posting </h2>
+                            <p>Develop REST API endpoint using Spring Boot that exposes a CRUD Interface for managing job postings on a hiring platform.</p>
+                            <a href="https://github.com/dheeraj9307/Job_positng.git"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!------------------contact-------------------------------------------------------->
+
+        <div id="contact">
+
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>dheeraj162001@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>+91-8115701653</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>></a>
+                            <a href="https://twitter.com/login"><i class="fab fa-twitter-square"></i>></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>></a>
+                            <a href="https://www.linkedin.com/in/dheeraj-patel-6384361a8/"><i
+                                    class="fab fa-linkedin"></i>></a>
+                        </div>
+                        <a href="images/my-cv1.pdf" download class="btn btn2">Download Cv</a>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="text" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Designed with passion by <strong>Dheeraj Patel</strong></p>
+
+            </div>
+        </div>
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxWNWcXu-ReQkPWY-4b1QD8ixGO57hFYunlA2No9odzx0DnzpwIdI07S60tB1Ax8L4RGQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+</body>
+
+</html>
